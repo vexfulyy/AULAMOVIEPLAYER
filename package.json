@@ -1,0 +1,24 @@
+{
+  "name": "aulaplayer",
+  "version": "1.0.0",
+  "description": "A simple player for Stellar movie embeds",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^35.7.5",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.aulaplayer.app",
+    "productName": "AulaPlayer",
+    "artifactName": "AulaPlayer.exe",
+    "files": ["main.js", "package.json", "splash.html", "icon.png"],
+    "win": {
+      "icon": "icon.png",
+      "target": "portable"
+    }
+  }
+}
